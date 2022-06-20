@@ -1,15 +1,17 @@
 import React from 'react'
+// import { Link } from 'react-router-dom'
+// import { withRouter } from 'react-router'
 import { Link, withRouter } from 'react-router-dom'
 
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { savePhoto } from './../../../../thunk'
+import { savePhoto } from './../../../../redux/thunk'
 import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 
 import PageLayout from './../../PageLayout/PageLayout'
 
 import './../../components/css/lk_user_data.css'
-import nophoto from './../../../../images/no-photo.gif'
+import nophoto from './../../../../../src/no-photo.gif'
 
 const EditProfilePage = ( { userId, photo, savePhoto } ) => {
   const onSelectFile = ( e ) => {

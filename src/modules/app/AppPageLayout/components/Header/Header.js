@@ -4,7 +4,6 @@ import Logo from './../Logo/Logo'
 import DistrictSelect from './../DistrictSelect/DistrictSelect'
 import MenuTopStick from './../MenuTopStick/MenuTopStick'
 import MenuTop from './../MenuTop/MenuTop'
-import TopTeaser from './../TopTeaser/TopTeaser'
 
 const Header = () => {
   return (
@@ -20,7 +19,6 @@ const Header = () => {
       <div className="header_bottom_section">
         <div className="container">
         <MenuTop />
-        <TopTeaser />
         </div>
       </div>
     </div>

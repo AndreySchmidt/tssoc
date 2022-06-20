@@ -5,7 +5,7 @@ import {
   FOLLOW_ACTION,
   UNFOLLOW_ACTION,
   SET_CURRENT_PAGE_NUMBER_ACTION,
-} from './../../constants'
+} from './../../redux/constants'
 
 
 //toggleBlogList + payload

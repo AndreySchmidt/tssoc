@@ -1,24 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-
-// <Route path='/user/:id(\d+)/announcement' component={AnnouncementPage} />
-// <Route path='/user/:id(\d+)/video' component={VideoPage} />
-// <Route path='/user/:id(\d+)/cart' component={CartPage} />
-// <Route path='/user/:id(\d+)/plan' component={PlanPage} />
-// <Route path='/user/:id(\d+)/calculator_item' component={CalcItemPage} />
-// <Route path='/user/:id(\d+)/calculator' component={CalcListPage} />
-// <Route path='/user/:id(\d+)/photo_edit' component={EditPhotoPage} />
-// <Route path='/user/:id(\d+)/photo' component={PhotoPage} />
-// <Route path='/user/:id(\d+)/friend' component={FriendPage} />
-// <Route path='/user/:id(\d+)/edit_profile' component={EditProfilePage} />
-// <Route path='/user/:id(\d+)/mess' component={MessPage} />
-// <Route path='/user/:id(\d+)/consultation' component={MyConsultationListPage} />
-// <Route path='/user/:id(\d+)/favorite' component={FavoritePage} />
-// <Route path='/user/:id(\d+)/blog_item' component={MyBlogItemPage} />
-// <Route path='/user/:id(\d+)/blog' component={MyBlogListPage} />
-// <Route path='/user/:id(\d+)/my_list' component={MyListPage} />
-// <Route path='/user/:id(\d+)/comment' component={MyCommentsPage} />
-// <Route path='/user/:id(\d+)' component={UserPage} />
+import { Link } from 'react-router-dom'
 
 const MenuBlock = () => {
   return (

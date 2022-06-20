@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import App from './modules/app/App'
 import reportWebVitals from './reportWebVitals'
 
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 // import { BrowserRouter, Route } from "react-router-dom";
 import { Provider } from 'react-redux'
 import configStore from './redux/configStore'
@@ -19,11 +19,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <Provider store = { store }>
         <App />
       </Provider>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 )
 

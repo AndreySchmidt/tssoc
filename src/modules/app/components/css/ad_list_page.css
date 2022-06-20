@@ -126,11 +126,11 @@
     width: 9px;
     height: 9px;
     vertical-align: middle;
-    background: url("./../../../../img/arrow-double-up.png") 0 0 no-repeat;
+    /* background: url("./../../../../img/arrow-double-up.png") 0 0 no-repeat; */
 }
 
 .c_ad_search_section .full_data.show_full a > i {
-    background: url("./../../../../img/arrow-double-down.png") 0 0 no-repeat;
+    /* background: url("./../../../../img/arrow-double-down.png") 0 0 no-repeat; */
 }
 
 .c_ad_search_section .search_input_with_button {
@@ -515,11 +515,11 @@
 }
 
 .c_list_extended_org_view  .contacts_section .contact_item.phone {
-    background-image: url("./../../../../img/icon-phone.png");
+    /* background-image: url("./../../../../img/icon-phone.png"); */
 }
 
 .c_list_extended_org_view  .contacts_section .contact_item.mail {
-    background-image: url("./../../../../img/icon-mail.png");
+    /* background-image: url("./../../../../img/icon-mail.png"); */
 }
 
 .c_list_extended_org_view  .contacts_section .contact_item.site {

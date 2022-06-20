@@ -87,21 +87,21 @@
 }
 
 .c_people_list .actions .write {
-	background-image: url("./../../../img/icon-write.png");
+	/* background-image: url("./../../../img/icon-write.png"); */
 }
 
 .c_people_list .actions .add {
-	background-image: url("./../../../img/icon-friend-add.png");
+	/* background-image: url("./../../../img/icon-friend-add.png"); */
 }
 
 .c_people_list .actions .delete {
-	background-image: url("./../../../img/icon-friend-del.png");
+	/* background-image: url("./../../../img/icon-friend-del.png"); */
 }
 
 .c_people_list .actions .fave-add {
-	background-image: url("./../../../img/fave-add.png");
+	/* background-image: url("./../../../img/fave-add.png"); */
 }
 
 .c_people_list .actions .fave-del {
-	background-image: url("./../../../img/fave-del.png");
+	/* background-image: url("./../../../img/fave-del.png"); */
 }

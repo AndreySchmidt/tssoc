@@ -9,7 +9,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    /* background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x; */
 }
 
 .c_button:hover {
@@ -29,7 +29,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    /* background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x; */
 }
 
 .c_button_large:hover {
@@ -50,7 +50,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    /* background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x; */
 }
 
 .c_button_like > .icon_like {
@@ -59,7 +59,7 @@
     width: 15px;
     height: 14px;
     margin-right: 5px;
-    background: url("../img/icon-like.png") 0 0 no-repeat;
+    /* background: url("../img/icon-like.png") 0 0 no-repeat; */
 }
 
 .c_button:hover {
@@ -79,7 +79,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    /* background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x; */
 }
 
 .c_button_settings:hover {
@@ -100,7 +100,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    /* background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x; */
     font-weight: bold;
 }
 
@@ -135,7 +135,7 @@
     width: 9px;
     height: 9px;
     vertical-align: middle;
-    background: url("../img/show-more-arrow.png") 0 0 no-repeat;
+    /* background: url("../img/show-more-arrow.png") 0 0 no-repeat; */
 }
 
 /*END c_show_more_button*/
@@ -151,7 +151,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    /* background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x; */
     font-weight: bold;
 }
 
@@ -204,7 +204,7 @@
 
 .c_delete_link {
     padding-left: 17px;
-    background: url("../img/icon-close.png") 0 1px no-repeat;
+    /* background: url("../img/icon-close.png") 0 1px no-repeat; */
 }
 
 /*END c_delete_link*/

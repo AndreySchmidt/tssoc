@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import LoginForm from './components/LoginForm'
 
-import { authMe } from './../../../thunk'
+import { authMe } from './../../../redux/thunk'
 // import { setMyUserData } from './../../../actions'
 
 const HomePage = ( { authMe, isAuth, login, id } ) => {

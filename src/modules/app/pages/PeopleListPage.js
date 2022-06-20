@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {setCurrentPage} from './../actions'
 import { usersSelector, pageSizeSelector, totalUsersQuanSelector, currentPageSelector, isFetchingSelector } from './../selectors'
 // import {setCurrentPage, isFetching} from './../actions'
-import {getUserList, follow, unfollow} from './../../../thunk'
+import {getUserList, follow, unfollow} from './../../../redux/thunk'
 
 import PageLayout from './../PageLayout/PageLayout'
 import Pagination from './../components/Pagination/Pagination'

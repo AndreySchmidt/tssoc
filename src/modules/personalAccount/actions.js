@@ -1,7 +1,7 @@
 import {
   SET_USER_PROFILE_ACTION,
   SET_USER_STATUS_ACTION,
-} from './../../constants'
+} from './../../redux/constants'
 
 export function setUserProfile(userData) {
   return {
