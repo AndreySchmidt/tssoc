@@ -1,26 +1,30 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-// import { withRouter } from 'react-router'
-import { Link, withRouter } from 'react-router-dom'
-
+import { Link, useNavigate } from 'react-router-dom'
+// import { Link, useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { compose } from 'redux'
+// import { compose } from 'redux'
 import { savePhoto } from './../../../../redux/thunk'
-import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
+// import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 
 import PageLayout from './../../PageLayout/PageLayout'
 
 import './../../components/css/lk_user_data.css'
 import nophoto from './../../../../../src/no-photo.gif'
 
-const EditProfilePage = ( { userId, photo, savePhoto } ) => {
+const EditProfilePage = ( { isAuth, userId, photo, savePhoto } ) => {
+
+  const navigate = useNavigate()
+  if (!isAuth) {
+    navigate("/")
+  }
+
+  // const { userId } = useParams()
   const onSelectFile = ( e ) => {
 
     if( e.target.files[0] && e.target.files.length ){
       // console.log('onSelectFile e', e)
       savePhoto(e.target.files[0])
     }
-    // return true
   }
   return (
     <PageLayout>
@@ -98,10 +102,12 @@ const EditProfilePage = ( { userId, photo, savePhoto } ) => {
 
 const mapStateToProps = ( state ) => {
   return {
+    isAuth: state.commonReducer.isAuth,
     userId: state.commonReducer.id,
     photo: state.personalAccountReducer.photos.large,
   }
 }
 
 // export default connect( mapStateToProps, { savePhoto })( EditProfilePage )
-export default compose( AuthRedirect, withRouter, connect( mapStateToProps, { savePhoto } ) )( EditProfilePage )
+// export default compose( AuthRedirect, withRouter, connect( mapStateToProps, { savePhoto } ) )( EditProfilePage )
+export default connect( mapStateToProps, { savePhoto } )( EditProfilePage )

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
-import {setCurrentPage} from './../actions'
+import { setCurrentPage } from './../actions'
 import { usersSelector, pageSizeSelector, totalUsersQuanSelector, currentPageSelector, isFetchingSelector } from './../selectors'
 // import {setCurrentPage, isFetching} from './../actions'
 import {getUserList, follow, unfollow} from './../../../redux/thunk'
@@ -14,7 +14,7 @@ import PeopleItem from './components/PeopleItem'
 import './../components/css/ad_list_page.css'
 import './people_list.css'
 
-const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUsersQuan, currentPage, setCurrentPageDispatch, isFetching}) => {
+const PeopleListPage = ( { follow, unfollow, getUserList, users, pageSize, totalUsersQuan, currentPage, setCurrentPageDispatch, isFetching } ) => {
 
   useEffect(() => {
     getUserList(currentPage, pageSize)

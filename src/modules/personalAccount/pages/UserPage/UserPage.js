@@ -1,39 +1,36 @@
 import React, { useEffect } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { compose } from 'redux'
+// import { compose } from 'redux'
 import { getUserProfile, getUserStatus, updateUserStatus } from './../../../../redux/thunk'
-import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
+// import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 import { getUserId, getStatus, getLookingForAJob, getLookingForAJobDescription, getFullName, getContacts, getPhotos } from './../../selectors'
-
-const contentbg = ''
-
 import PageLayout from './../../PageLayout/PageLayout'
-
 import InfoBlock from './components/InfoBlock/InfoBlock'
 import HeaderSection from './components/HeaderSection/HeaderSection'
 import MainContentAside from './components/MainContentAside/MainContentAside'
 import Status from './components/Status/Status'
 import ProfileOptionsList from './components/ProfileOptionsList/ProfileOptionsList'
 
-// const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
-// const UserPage = ({isAuth, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
+const contentbg = ''
+
 const UserPage = ( {
   lookingForAJob, lookingForAJobDescription, fullName, contacts, photos,
   status, getUserProfile, getUserStatus, updateUserStatus,
-  match
+  // match
 } ) => {
 
+const { userId } = useParams()
 // console.log(match.params.id)
-// console.log('zzz', status)
-
-const userId = match.params.id
+// const userId = match.params.id
 
   useEffect(() => {
     getUserProfile(userId)
     // getUserStatus(userId)
   }, [userId])
 
+//Redirect isAuth const navigate = useNavigate(); navigate("/")
   // if (!isAuth) {
   //   return <Redirect to = "/" />
   // }
@@ -96,4 +93,5 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 // export default connect(mapStateToProps, mapDispatchToProps)(withRouter(AuthRedirect(UserPage)))
-export default compose( AuthRedirect, withRouter, connect( mapStateToProps, mapDispatchToProps ) )( UserPage )
+export default connect( mapStateToProps, mapDispatchToProps )( UserPage )
+// export default compose( AuthRedirect, withRouter, connect( mapStateToProps, mapDispatchToProps ) )( UserPage )

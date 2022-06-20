@@ -1,7 +1,7 @@
 import { userApi } from './../userApi/userApi'
 import { setUserProfile, setUserStatus } from './../modules/personalAccount/actions'
-import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching} from './../modules/app/actions'
-import {setMyUserData, setUserPhoto} from './actions'
+import { followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching } from './../modules/app/actions'
+import { setMyUserData, setUserPhoto } from './actions'
 
 export const savePhoto = ( photoFile: Array<string> ) => {
   // console.log('savePhoto th', photoFile)
