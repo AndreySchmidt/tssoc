@@ -1,4 +1,42 @@
-const initialState = {
+type initialStateType = {
+  appReducer: {
+    users : Array<any>,
+    pageSize: number,
+    totalUsersQuan: number,
+    currentPage: number,
+    isFetching: boolean,
+  },
+  personalAccountReducer:{
+    status: string,
+    userId: number,
+    lookingForAJob: boolean,
+    lookingForAJobDescription: string,
+    fullName: string,
+    contacts: {
+      github: string,
+      vk: string,
+      facebook: string,
+      instagram: string,
+      twitter: string,
+      website: string,
+      youtube: string,
+      mainLink: string,
+    },
+    photos: {
+      small: string,
+      large: string
+    }
+  },
+  commonReducer:{
+    id: number,
+    login: string,
+    email: string,
+    isAuth: boolean,
+    isFetching: boolean,
+  },
+}
+
+const initialState: initialStateType = {
   appReducer: {
     users : [
       // {
@@ -7,13 +45,6 @@ const initialState = {
       //   status:"status",
       //   photos:{small:null},
       //   followed:true
-      // },
-      // {
-      //   id:2,
-      //   name:"Name Some",
-      //   status:"status",
-      //   photos:{small:null},
-      //   followed:false
       // },
     ],
     pageSize:10,
