@@ -24,6 +24,7 @@ export function unfollowBtn (userId) {
 }
 
 export function setUserList (userList) {
+  // console.log(userList, 'action setUserList')
   return {
     type: SET_USER_LIST_ACTION,
     payload:{ userList }

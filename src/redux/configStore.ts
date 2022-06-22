@@ -1,14 +1,15 @@
+// @reduxjs/toolkit
+import { legacy_createStore as createStore, applyMiddleware, compose, combineReducers } from 'redux'
+import appReducer from './../modules/app/reducers'
+import personalAccountReducer from './../modules/personalAccount/reducers'
+import commonReducer from './reducers'
+import thunk from 'redux-thunk'
+
 declare global {
   interface Window {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose
   }
 }
-
-import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
-import appReducer from './../modules/app/reducers'
-import personalAccountReducer from './../modules/personalAccount/reducers'
-import commonReducer from './reducers'
-import thunk from 'redux-thunk'
 
 let reducers = combineReducers({
     appReducer,
